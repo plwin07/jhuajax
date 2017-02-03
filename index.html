@@ -14,7 +14,7 @@
         padding: 0;
       }
 
-      h1 {
+      .menutitle {
         width: 90%;
         margin-right: auto;
         margin-left: auto;
@@ -64,10 +64,18 @@
           background-color: gray;
           border: 1px solid black;
           width: 30%;
+          height: 200px;
           padding: 1%;
           margin-left: 1%;
           margin-right: 1%;
           position: relative;
+          overflow: scroll;
+        }
+        .mobilemenu {
+          display: none;
+        }
+        #mobilechicken, #mobilebeef, #mobilesushi {
+          display: none;
         }
       }
 
@@ -82,10 +90,19 @@
           margin-right: auto;
           margin-bottom: 10px;
           position: relative;
+          height: 200px;
+          position: relative;
+          overflow: scroll;
         }
         #lastcol {
           width: 91.2%;
           margin-right: auto;
+        }
+        .mobilemenu {
+          display: none;
+        }
+        #mobilechicken, #mobilebeef, #mobilesushi {
+          display: none;
         }
       }
 
@@ -100,18 +117,59 @@
           margin-right: auto;
           margin-bottom: 10px;
           position: relative;
+          height: 200px;
+          position: relative;
+          overflow: scroll;
+        }
+        .menutitle {
+          display: none;
+        }
+        .mobilemenu {
+          width: 90%;
+          padding: 5px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 10px;
+        }
+        .title {
+          width: 100%;
+          margin-left: 0px;
+          padding: 0px;
+          margin-bottom: 20px;
+          position: relative;
+          background-color: red;
+        }
+        #bodytext {
+          margin-top: 5px;
+        }
+        #chicken, #beef, #sushi {
+          display: none;
+        }
+        #mobilechicken {
+          background-color: yellow;
+        }
+        #mobilebeef {
+          background-color: red;
+        }
+        #mobilesushi {
+          background-color: purple;
         }
       }
     </style>
   </head>
   <body>
-    <h1>Our Menu</h1>
+    <h1 class = "menutitle">Our Menu</h1>
+    <h2 class = "mobilemenu">Categories</h2>
     <div class = "row">
       <div class="col-lg-4 col-md-6 col-sm-1">
-        <div id = "chicken"class = "title" >
+        <div id = "chicken" class = "title" >
           <p id="titletext">Chicken</p>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        <div id = "mobilechicken" class = "title">
+          <p id = "titletext">Chicken Chicken Chicken Chicken Chicken
+            Chicken Chicken Chicken Chicken Chicken Chicken</p>
+        </div>
+        <p id="bodytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -122,6 +180,10 @@
       <div class="col-lg-4 col-md-6 col-sm-1">
         <div id = "beef"class = "title" >
           <p id="titletext">Beef</p>
+        </div>
+        <div id = "mobilebeef" class = "title">
+          <p id = "titletext">Beef Beef Beef Beef Beef Beef Beef Beef Beef Beef
+          Beef Beef Beef Beef</p>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -135,13 +197,24 @@
         <div id = "sushi"class = "title" >
           <p id="titletext">Sushi</p>
         </div>
+        <div id = "mobilesushi" class = "title">
+          <p id = "titletext">Sushi Sushi Sushi Sushi Sushi Sushi Sushi
+          Sushi Sushi Sushi Sushi Sushi Sushi Sushi</p>
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-           culpa qui officia deserunt mollit anim id est laborum.</p>
+           culpa qui officia deserunt mollit anim id est laborum.
+           orem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+             eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
   </body>
